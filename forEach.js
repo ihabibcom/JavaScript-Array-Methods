@@ -2,11 +2,11 @@ const number = [2, 5, 6, 9];
 
 //you can use for loop without using forEach Methods
 
-// for(i = 0; i<number.length; i++){
-//     // console.log(number[i]);
-//     // console.log(number);
-//     console.log(i+ ":"+ number[i]);
-// }
+for(i = 0; i<number.length; i++){
+    console.log(number[i]);
+    console.log(number);
+    console.log(i+ ":"+ number[i]);
+}
 
 
 
@@ -14,31 +14,31 @@ const number = [2, 5, 6, 9];
 
 //using forEach methods declaring a function
 
-// number.forEach(eachNumber);
+number.forEach(eachNumber);
 
-// function eachNumber(value, index, arr){
-//     console.log("number " + index + ":" + value);
-// }
-
-
+function eachNumber(value, index, arr){
+    console.log("number " + index + ":" + value);
+}
 
 
 
-// number.forEach((value, index, arr) => {
-//     console.log("number " + index + ":" + value);
-// });
+
+
+number.forEach((value, index, arr) => {
+    console.log("number " + index + ":" + value);
+});
 
 
 
 
 //sumation of values;
 
-// var sum = 0;
-// number.forEach((value, index, arr) => {
-//     sum += value;
-// });
+var sum = 0;
+number.forEach((value, index, arr) => {
+    sum += value;
+});
 
-// console.log(sum)
+console.log(sum)
 
 
 const letters = ['a', 'b', 'c','a', 'c', 'd'];
